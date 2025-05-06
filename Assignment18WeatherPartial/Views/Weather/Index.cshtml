@@ -1,0 +1,14 @@
+﻿@using Assignment18WeatherPartial.Models
+@model IEnumerable<CityWeather>
+
+@{
+    ViewBag.Title = "Overview";
+}
+
+
+<div class="flex">
+    @foreach (var entry in Model)
+    {
+        await Html.RenderPartialAsync("_CityWeatherPartialView", entry);
+    }
+</div>

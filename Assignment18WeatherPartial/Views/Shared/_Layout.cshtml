@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/">Overview</a></li>
+        </ul>
+    </div>
+    <div class="page-content">
+        <h1>Weather @ViewBag.Title</h1>
+        <div class="margin-top-50"/>
+        @RenderBody()
+    </div>
+</body>
+</html>

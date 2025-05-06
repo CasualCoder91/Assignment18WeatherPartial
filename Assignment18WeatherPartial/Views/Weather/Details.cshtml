@@ -1,0 +1,11 @@
+﻿@using Assignment18WeatherPartial.Models
+@model CityWeather
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="w-50">
+    @{
+        await Html.RenderPartialAsync("_CityWeatherPartialView", Model);
+    }
+</div>
